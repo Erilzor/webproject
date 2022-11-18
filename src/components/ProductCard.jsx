@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import * as datas from "../../../model/picture-library.json"
+import * as datas from "../../../app-data/library/picture-library.json"
 
 
 export default function ProductCard() {
