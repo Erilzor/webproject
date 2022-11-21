@@ -9,7 +9,7 @@ export default function Navbar() {
      <div class="flex items-center justify-between">
        {/* <!--Logo--> */}
        <div class="pt-2">
-         <img src="/img/newton.png" class="h-14 rounded-2xl" alt="XXX"/>
+         <img src="/img/newton.png" class="h-14 rounded-2xl" alt="Picture of Newton logo"/>
        </div>
        {/* <!--Menu Items--> */}
        <div class="hidden md:flex space-x-6 text-xl">
