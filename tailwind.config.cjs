@@ -7,8 +7,11 @@ module.exports = {
       fontSize:{
         xxs: '0.5rem',
       },
+      backgroundImage:{
+        'hero-pattern': "url('/img/space.jpg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
       colors:{
-        'primary-background-color': '#f1f5f9',
         'white': '#ffffff',
         'black': '#000000',
         'border-color': '#4b5563',

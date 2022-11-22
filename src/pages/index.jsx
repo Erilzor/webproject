@@ -12,20 +12,14 @@ const Home = () => {
   <Navbar/>
    
 
-  <section id="hero" class=" py-10">
+  <section id="hero" class=" py-96 bg-hero-pattern">
   
   </section>
 
  
-  <section id="recent" class="bg-primary-background-color py-10">
-   
-  </section>
 
-  
-  <section id="frequent" class="bg-primary-background-color py-10">
-   
 
-  </section>
+ 
   <Footer/>
     </>
   );

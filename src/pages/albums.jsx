@@ -12,7 +12,7 @@ return <main>
       <Navbar/>
 
 
-  <section id="hero" class="bg-blue-800 py-10">
+  <section id="hero" class="bg-hero-pattern py-10">
 
    <AlbumHeaders/>
 

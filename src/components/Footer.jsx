@@ -1,6 +1,6 @@
 export default function Footer(){
     return <>
-     <footer class="bg-white">
+     <footer class="bg-blue-900">
     {/* <!--Flex container--> */}
     <div class="container flex flex-col-reverse justify-between px-6
       mx-auto space-y-8 md:flex-row md:space-y-0">
@@ -16,13 +16,13 @@ export default function Footer(){
 
      {/* <!--List Container--> */}
      <div class="flex justify-around space-x-32 pb-10">
-      <div class="flex flex-col space-y-3 text-black">
+      <div class="flex flex-col space-y-3 text-white">
         <a href="/" class="hover:text-newtoncolor">Home</a>
         <a href="/about" class="hover:text-newtoncolor">About</a>
         <a href="/albums" class="hover:text-newtoncolor">Albums</a>
         <a href="/edit" class="hover:text-newtoncolor">Edit</a>
       </div>
-      <div class="flex flex-col space-y-3 text-black">
+      <div class="flex flex-col space-y-3 text-white">
         <a href="#" class="hover:text-newtoncolor">Help</a>
         <a href="#" class="hover:text-newtoncolor">Community</a>
         <a href="#" class="hover:text-newtoncolor">Privacy Policy</a>
