@@ -9,7 +9,7 @@ export default function Test() {
 
    
     <section id="foldersection" class="bg-primary-background-color py-10">
-    
+    <h1 className="font-bold bg-blue-900 text-white flex justify-center">Alex</h1>
     </section>
 
    
