@@ -1,8 +1,8 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import ProductCard from "../components/ProductCard"
-import * as images from "../../../app-data/library/picture-library.json" 
-import AlbumHeaders from "../components/AlbumHeaders"
+// import ProductCard from "../components/ProductCard"
+// import * as images from "../../../app-data/library/picture-library.json" 
+// import AlbumHeaders from "../components/AlbumHeaders"
 
 
 export default function Album() {
@@ -14,7 +14,7 @@ return <main>
 
   <section id="hero" class="bg-hero-pattern py-10">
 
-   <AlbumHeaders/>
+   {/* <AlbumHeaders/> */}
 
   
     <div className="flex flex-row flex-wrap space-x-4">
