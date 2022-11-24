@@ -13,6 +13,7 @@ const Home = () => {
    
 
   <section id="hero" class=" py-96 bg-hero-pattern">
+    <h1 class="text-white">HELLO</h1>
   
   </section>
 
