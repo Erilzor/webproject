@@ -1,8 +1,8 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import ProductCard from "../components/ProductCard"
-// import * as images from "../../../app-data/library/picture-library.json" 
-import AlbumHeaders from "../components/AlbumHeaders"
+// import ProductCard from "../components/ProductCard"
+// // import * as images from "../../../app-data/library/picture-library.json" 
+// import AlbumHeaders from "../components/AlbumHeaders"
 
 
 export default function Album() {
@@ -14,10 +14,10 @@ return <main>
 
   <section id="hero" class="bg-hero-pattern py-10">
 
-   <AlbumHeaders/>
-   <ProductCard/>
+   {/* <AlbumHeaders/>
+   <ProductCard/> */}
   
-    {/* <div className="flex flex-row flex-wrap space-x-4">
+    <div className="flex flex-row flex-wrap space-x-4">
       <div className="bg-blue-700 h-64 rounded-full">
       <img src="app-data\library\pictures\album-header\A Galactic Spectacle_4862916839_o~small.jpg" className="h-52 rounded-full " />
       <p class="flex justify-center font-bold text-white" >Newborn stars </p>
@@ -31,7 +31,7 @@ return <main>
       <p class="flex justify-center font-bold text-white" >Planets </p>
       </div>
       <div className="bg-blue-700 h-64 rounded-full">
-      <img src="app-data\library\pictures\album-header\A Galactic Spectacle_4862916839_o~small.jpg" className="h-52 rounded-full " />
+      <img src="app-data\library\pictures\album-header\PIA04921~small.jpg" className="h-52 rounded-full " />
       <p class="flex justify-center font-bold text-white" >Galaxies </p>
       </div>
       <div className="bg-blue-700 h-64 rounded-full">
@@ -40,7 +40,7 @@ return <main>
       </div>
 
  
-    </div> */}
+    </div>
 
 
 
