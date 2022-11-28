@@ -10,14 +10,12 @@ export default function Test() {
       
       <Navbar/>
 
-   <section id="filtersection" class="bg-primary-background-color py-10">
+   <section id="editsection" class="bg-hero-pattern py-96">
             
    </section>
 
   
-   <section id="product" class="bg-primary-background-color py-10">
-          
-   </section>
+  
 
   <Footer/>
 

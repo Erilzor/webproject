@@ -9,9 +9,10 @@ module.exports = {
       },
       backgroundImage:{
         'hero-pattern': "url('/img/space.jpg')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        'homepage': "url('/img/spacepic.jpg')",
       },
       colors:{
+        'backgroundcolor': 'gradient-to-r from-sky-500 to-indigo-500',
         'white': '#ffffff',
         'black': '#000000',
         'border-color': '#4b5563',

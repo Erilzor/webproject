@@ -8,12 +8,12 @@ export default function Test() {
     <Navbar />
 
    
-    <section id="foldersection" class="bg-primary-background-color py-10">
-    <h1 className="font-bold bg-blue-900 text-white flex justify-center">Alex</h1>
+    <section id="aboutsection" class="bg-hero-pattern py-96">
+    
     </section>
 
    
-    <section id="template" class="bg-primary-background-color py-20">
+    <section id="aboutus" class="bg-hero-pattern py-20">
    
     </section>
 

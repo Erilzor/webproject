@@ -18,23 +18,23 @@ return <main>
    <ProductCard/> */}
   
     <div className="flex flex-row flex-wrap space-x-4">
-      <div className="bg-blue-700 h-64 rounded-full">
+      <div className="bg-neutral-900 h-64 rounded-full">
       <img src="app-data\library\pictures\album-header\A Galactic Spectacle_4862916839_o~small.jpg" className="h-52 rounded-full " />
       <p class="flex justify-center font-bold text-white" >Newborn stars </p>
       </div>
-      <div className="bg-blue-700 h-64 rounded-full">
+      <div className="bg-neutral-900 h-64 rounded-full">
       <img src="app-data\library\pictures\album-header\GSFC_20171208_Archive_e000383~small.jpg"  className="h-52 rounded-full " />
       <p class="flex justify-center font-bold text-white" >Nebulas </p>
       </div>
-      <div className="bg-blue-700 h-64 rounded-full">
+      <div className="bg-neutral-900 h-64 rounded-full">
       <img src="app-data\library\pictures\album-header\hubble-captures-vivid-auroras-in-jupiters-atmosphere_28000029525_o~small.jpg" className="h-52 rounded-full " />
       <p class="flex justify-center font-bold text-white" >Planets </p>
       </div>
-      <div className="bg-blue-700 h-64 rounded-full">
+      <div className="bg-neutral-900 h-64 rounded-full">
       <img src="app-data\library\pictures\album-header\PIA04921~small.jpg" className="h-52 rounded-full " />
       <p class="flex justify-center font-bold text-white" >Galaxies </p>
       </div>
-      <div className="bg-blue-700 h-64 rounded-full">
+      <div className="bg-neutral-900 h-64 rounded-full">
       <img src="app-data\library\pictures\album-header\PIA04921~small.jpg" className="h-52 rounded-full " />
       <p class="flex justify-center font-bold text-white" >Hubble telescope </p>
       </div>
@@ -47,7 +47,7 @@ return <main>
   </section>
 
 
-  <section id="picture" class="bg-blue-800 py-72 ">
+  <section id="picture" class="bg-hero-pattern py-72 ">
   </section>
 
   <Footer/>
