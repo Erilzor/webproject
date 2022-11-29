@@ -11,9 +11,9 @@ export default function Modal2({ isVisible, onClose }) {
     const [selectedTab, setSelectedTab]  = useState("highRes")
 
     return (
-        <div id="wrapper" className="fixed inset-0 bg-black bg-opacity-25  backdrop-blur-sm
-        flex justify-center pt-16" onClick={handleClose2}>
-            <div className="w-[60rem] flex flex-col">
+        <div id="wrapper" className="relative inline-table inset-0 bg-black bg-opacity-25  backdrop-blur-sm
+        pt-16" onClick={handleClose2}>
+            <div className="w-[80rem] flex flex-col">
                 <button className="text-white text-xl 
             place-self-end" onClick={() => onClose()}>X</button>
                 <div className="bg-hero-pattern border-white border-2 p-2 
@@ -25,8 +25,8 @@ export default function Modal2({ isVisible, onClose }) {
                         <button class="p-3 text-lg text-white hover:bg-blue-50 hover:text-blue-500"onClick={() => setSelectedTab("lowRes")}>low res</button>
                     </div>
 
-                    <div class="flex flex-row py-6 justify-between">
-                        <div class="w-1/4">
+                    <div class="flex flex-col py-6 justify-between">
+                        <div class="">
                         { 
                             (selectedTab === "lowRes") &&<div>
                            
