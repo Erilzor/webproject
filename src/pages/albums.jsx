@@ -1,12 +1,15 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import { useState } from "react"
+import Modal from "../components/ProductModal"
+
 // import ProductCard from "../components/ProductCard"
 // // import * as images from "../../../app-data/library/picture-library.json" 
 // import AlbumHeaders from "../components/AlbumHeaders"
 
 
 export default function Album() {
-
+  const [showModal, setShowModal] = useState(false);
 return <main>
 
       <Navbar/>
@@ -17,7 +20,7 @@ return <main>
    {/* <AlbumHeaders/>
    <ProductCard/> */}
   
-    <div className="flex flex-row flex-wrap space-x-4">
+    <div  onClick={() => setShowModal(true)} className="flex flex-row flex-wrap space-x-4">
       <div className="bg-neutral-900 h-64 rounded-full">
       <img src="app-data\library\pictures\album-header\A Galactic Spectacle_4862916839_o~small.jpg" className="h-52 rounded-full " />
       <p class="flex justify-center font-bold text-white" >Newborn stars </p>
@@ -35,13 +38,13 @@ return <main>
       <p class="flex justify-center font-bold text-white" >Galaxies </p>
       </div>
       <div className="bg-neutral-900 h-64 rounded-full">
-      <img src="app-data\library\pictures\album-header\PIA04921~small.jpg" className="h-52 rounded-full " />
+      <img src="app-data\library\pictures\album-header\GSFC_20171208_Archive_e002151~small.jpg" className="h-52 w-52 object-cover rounded-full " />
       <p class="flex justify-center font-bold text-white" >Hubble telescope </p>
       </div>
 
  
     </div>
-
+    <Modal isVisible={showModal} onClose={() => setShowModal(false)} />
 
 
   </section>
