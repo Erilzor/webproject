@@ -1,6 +1,6 @@
 export default function Footer(){
     return <>
-     <footer class="bg-gradient-to-r from-neutral-800 to-neutral-900">
+     <footer class="p-6 bg-gradient-to-r from-neutral-800 to-neutral-900">
     {/* <!--Flex container--> */}
     <div class="container flex flex-col-reverse justify-between px-6
       mx-auto space-y-8 md:flex-row md:space-y-0">

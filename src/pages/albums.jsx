@@ -14,7 +14,7 @@ import * as datas from "../../public/app-data/library/picture-library.json"
 export default function Album() {
 
   const [shownModal, setShownModal] = useState(-1);
-  const [selectedTab, setSelectedTab] = useState("lowRes")
+  // const [selectedTab, setSelectedTab] = useState("lowRes")
 
 
   const [data, setData] = useState([]);
@@ -36,10 +36,7 @@ export default function Album() {
 
     <section id="hero" class="bg-hero-pattern py-10 text-white">
 
-      <p>Current: {shownModal}</p>
-
-      {/* <AlbumHeaders/>
-   <ProductCard/> */}
+      <p>hello: {shownModal}</p>
       <div class="flex flex-row space-x-6 px-6 py-4 ">
         {
           data && data.length > 0 && data.map((item, index) => {
@@ -49,7 +46,7 @@ export default function Album() {
         }
       </div>
 
-      {
+      {/* {
         (shownModal >= 0) && (
           <div>
             <h1>{data[shownModal].title}</h1>
@@ -72,36 +69,9 @@ export default function Album() {
             </div>
           </div>
         )
-      }
+      } */}
 
-
-
-      {/* <div onClick={() => setShowModal(true)} className="flex flex-row flex-wrap space-x-4">
-        <div className="bg-neutral-900 h-64 rounded-full">
-          <img src="app-data\library\pictures\album-header\A Galactic Spectacle_4862916839_o~small.jpg" className="h-52 rounded-full " />
-          <p class="flex justify-center font-bold text-white" >Newborn stars </p>
-        </div>
-        <div className="bg-neutral-900 h-64 rounded-full">
-          <img src="app-data\library\pictures\album-header\GSFC_20171208_Archive_e000383~small.jpg" className="h-52 rounded-full " />
-          <p class="flex justify-center font-bold text-white" >Nebulas </p>
-        </div>
-        <div className="bg-neutral-900 h-64 rounded-full">
-          <img src="app-data\library\pictures\album-header\hubble-captures-vivid-auroras-in-jupiters-atmosphere_28000029525_o~small.jpg" className="h-52 rounded-full " />
-          <p class="flex justify-center font-bold text-white" >Planets </p>
-        </div>
-        <div className="bg-neutral-900 h-64 rounded-full">
-          <img src="app-data\library\pictures\album-header\PIA04921~small.jpg" className="h-52 rounded-full " />
-          <p class="flex justify-center font-bold text-white" >Galaxies </p>
-        </div>
-        <div className="bg-neutral-900 h-64 rounded-full">
-          <img src="app-data\library\pictures\album-header\GSFC_20171208_Archive_e002151~small.jpg" className="h-52 w-52 object-cover rounded-full " />
-          <p class="flex justify-center font-bold text-white" >Hubble telescope </p>
-        </div> 
-        </div>*/}
-
-
-
-      {/* <Modal isVisible={showModal} onClose={() => setShowModal(false)} /> */}
+      <Modal isVisible={shownModal} onClose={() => setShownModal(-1)} contentIndex={shownModal}/>
 
 
     </section>

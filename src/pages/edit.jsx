@@ -5,8 +5,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 
 export default function Test() {
-  const [showModal, setShowModal] = useState(false);
-    return <Fragment>
+ return <Fragment>
       
       <Navbar/>
 
@@ -14,11 +13,13 @@ export default function Test() {
             
    </section>
 
-  
+   <section id="edit" class="bg-hero-pattern py-20">
+   
+    </section>
   
 
   <Footer/>
 
-  {/* <Modal isVisible={showModal} onClose= {() => setShowModal(false)} /> */}
+  
     </Fragment>
 }

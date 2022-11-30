@@ -4,7 +4,7 @@ export default function Navbar() {
   const [showMenu, setShowMenu]  = useState(false)
 
     return  <>
-    <nav class="relative  mx-auto p-2 bg-gradient-to-r from-neutral-800 to-neutral-900">
+    <nav class="relative  mx-auto p-4 bg-gradient-to-r from-neutral-800 to-neutral-900">
       {/* <!--Flex container--> */}
      <div class="flex items-center justify-between">
        {/* <!--Logo--> */}
