@@ -16,16 +16,16 @@ export default function Footer(){
 
      {/* <!--List Container--> */}
      <div class="flex justify-around space-x-32 pb-10">
-      <div class="flex flex-col space-y-3 text-white">
-        <a href="/" class="hover:text-newtoncolor">Home</a>
-        <a href="/about" class="hover:text-newtoncolor">About</a>
-        <a href="/albums" class="hover:text-newtoncolor">Albums</a>
-        <a href="/edit" class="hover:text-newtoncolor">Edit</a>
+      <div class="flex flex-col space-y-3 font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200">
+        <a href="/" class="text-transparent bg-clip-text bg-gradient-to-r hover:from-orange-600 hover:to-orange-300">Home</a>
+        <a href="/about" class="text-transparent bg-clip-text bg-gradient-to-r hover:from-orange-600 hover:to-orange-300">About</a>
+        <a href="/albums" class="text-transparent bg-clip-text bg-gradient-to-r hover:from-orange-600 hover:to-orange-300">Albums</a>
+        <a href="/edit" class="text-transparent bg-clip-text bg-gradient-to-r hover:from-orange-600 hover:to-orange-300">Edit</a>
       </div>
-      <div class="flex flex-col space-y-3 text-white">
-        <a href="#" class="hover:text-newtoncolor">Help</a>
-        <a href="#" class="hover:text-newtoncolor">Community</a>
-        <a href="#" class="hover:text-newtoncolor">Privacy Policy</a>
+      <div class="flex flex-col space-y-3 font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200">
+        <a href="#" class="text-transparent bg-clip-text bg-gradient-to-r hover:from-orange-600 hover:to-orange-300">Help</a>
+        <a href="#" class="text-transparent bg-clip-text bg-gradient-to-r hover:from-orange-600 hover:to-orange-300">Community</a>
+        <a href="#" class="text-transparent bg-clip-text bg-gradient-to-r hover:from-orange-600 hover:to-orange-300">Privacy Policy</a>
       </div>
      </div>  
     

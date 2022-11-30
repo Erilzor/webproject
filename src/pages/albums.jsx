@@ -35,43 +35,29 @@ export default function Album() {
 
 
     <section id="hero" class="bg-hero-pattern py-10 text-white">
-
-      <p>hello: {shownModal}</p>
-      <div class="flex flex-row space-x-6 px-6 py-4 ">
+      {/* Headers with hover name effect */}
+      <div class="flex flex-row flex-wrap space-x-6 justify-center">
         {
           data && data.length > 0 && data.map((item, index) => {
 
-            return <div onClick={() => setShownModal(index)}> <img key={item.id} src={item.headerImage} className="h-52" /></div>
+            return <div onClick={() =>
+              setShownModal(index)}>
+              <div className="w-56 h-56 relative mb-6 bg-gradient-to-tr from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300 rounded-full">
+                <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white">
+                  <p className="flex justify-center opacity-0 hover:opacity-100 ">{item.title}</p>
+                </div>
+                <div className="p-2 absolute inset-0 bg-cover bg-center z-0">
+                  <img key={item.id} src={item.headerImage} className="h-52 w-52 rounded-full hover:opacity-75" />
+                </div>
+              </div>
+
+
+            </div>
           })
         }
       </div>
 
-      {/* {
-        (shownModal >= 0) && (
-          <div>
-            <h1>{data[shownModal].title}</h1>
-            <h1>{data[shownModal].pictures.length}</h1>
-
-            <div class="flex flex-row flex-wrap space-x-6 px-6 py-4 ">
-              <div>
-                {(data[shownModal].pictures).map((picture) => {
-                  return <><p>
-                    title: {picture.title} - id:
-                    {picture.comment}
-                  </p>
-                    <p>{data[shownModal].path}</p>
-                    {selectedTab === "lowRes" && <img src={data[shownModal].path + "/" + picture.imgLoRes}></img>}
-                    {selectedTab === "highRes" && <img src={data[shownModal].path + "/" + picture.imgHiRes}></img>}
-                  </>
-                })}
-              </div>
-
-            </div>
-          </div>
-        )
-      } */}
-
-      <Modal isVisible={shownModal} onClose={() => setShownModal(-1)} contentIndex={shownModal}/>
+      <Modal isVisible={shownModal} onClose={() => setShownModal(-1)} contentIndex={shownModal} />
 
 
     </section>

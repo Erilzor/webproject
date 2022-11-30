@@ -10,7 +10,7 @@ export default function Test() {
       <Navbar/>
 
    <section id="editsection" class="bg-hero-pattern py-96">
-            
+   <img src="/img/astronaut.png" className="  animate-spin" />   
    </section>
 
    <section id="edit" class="bg-hero-pattern py-20">
