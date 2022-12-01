@@ -67,7 +67,7 @@ export default function Modal2({ isVisible, onClose, contentIndex }) {
                     }
                     <div class="flex flex-row ">
                         <button class="border-solid border-2 rounded-md px-4 py-2 text-black text-xl font-bold
-                    bg-gradient-to-r from-blue-300 to-orange-300 hover:from-orange-500 hover:to-blue-500 text-left" onClick={() => onClose()}>Close</button>
+                     bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300 text-left" onClick={() => onClose()}>Close</button>
 
                     </div>
                 </div>

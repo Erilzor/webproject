@@ -16,7 +16,7 @@ export default function Navbar() {
          <a href="/" class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">Home</a>
          <a href="/about"  class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">About</a>
          <a href="/albums"  class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">Albums</a>
-         <a href="/edit" class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">Edit</a>
+         <a href="/live" class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">LiveStream</a>
        </div>    
        {/* <!--Button--> */}
        <a href="#"
@@ -39,7 +39,7 @@ export default function Navbar() {
         <a href="/" class=" text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">Home</a>
         <a href="/about" class=" text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">About</a>
         <a href="/albums" class=" text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">Albums</a>
-        <a href="/edit" class=" text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">Edit</a>
+        <a href="/live" class=" text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">LiveStream</a>
        </nav>      
       </div>
      }

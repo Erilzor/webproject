@@ -24,10 +24,21 @@ module.exports = {
           '80%': {transform: 'scaleY(1.2)'},
           '100%': {transform: 'scaleY(1)'},
         },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
+        spinslow:{
+          from: 
+          { transform: 'rotate(0deg)'},
+          to: 
+          { transform: 'rotate(360deg)'}
+        } 
       },
       animation: {
         'open-menu': 'open-menu 0.5s ease-in-out forwards',
-        
+         wiggle: 'wiggle 1s ease-in-out infinite',
+         spinslow: 'spin 8s linear infinite',
       }
     },
   },
