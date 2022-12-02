@@ -11,12 +11,12 @@ export default function Test() {
 
     <section id="editsection" class="bg-hero-pattern pb-96">
       <div className="flex flex-row justify-center p-10">
-        <img src="/img/earth.png" className="h-64" />
+        <img src="/img/earth.png" className="h-64 animate-spinslower h-40-sm" />
       </div>
-      <div className="flex flex-row justify-between">
-      <img src="/img/astronaut.png" className="pl-96 animate-spinslow h-80 flex align-middle" />
+      <div className="flex flex-row justify-center">
+      <img src="/img/X.png" className="pl-96 animate-spinslow h-80" />
 
-      <img src="/img/satellite.png" className="h-64" /> 
+      <img src="/img/satellite.png" className="h-64 animate-wiggle pr-40" /> 
       </div>
      
     </section>

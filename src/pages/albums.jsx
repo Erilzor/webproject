@@ -14,13 +14,10 @@ import * as datas from "../../public/app-data/library/picture-library.json"
 export default function Album() {
 
   const [shownModal, setShownModal] = useState(-1);
-  // const [selectedTab, setSelectedTab] = useState("lowRes")
-
 
   const [data, setData] = useState([]);
   const getData = () => {
     return datas.albums;
-
   }
 
   useEffect(() => {
@@ -33,8 +30,7 @@ export default function Album() {
 
     <Navbar />
 
-
-    <section id="hero" class="bg-hero-pattern py-10 text-white">
+    <section id="hero" class="bg-hero-pattern pt-20 pb-96 text-white">
       {/* Headers with hover name effect */}
       <div class="flex flex-row flex-wrap space-x-6 justify-center">
         {
@@ -62,9 +58,7 @@ export default function Album() {
 
     </section>
 
-
-    <section id="picture" class="bg-hero-pattern py-72 ">
-    </section>
+   
 
     <Footer />
 

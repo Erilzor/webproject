@@ -20,9 +20,10 @@ export default function Navbar() {
        </div>    
        {/* <!--Button--> */}
        <a href="#"
-       class="hidden px-6 pt-5 font-bold text-xl text-black
+       class="hidden px-4 pt-2
        rounded-full h-16 baseline bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300 md:block">
-         JB</a>
+         <img className="h-8 " src='/img/user.png'/>
+         <p className='text-xs font-bold text-center'>User 3</p></a>
          {/* <!--Hamburger Icon--> */}
          <button id="menu-btn" class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300 text-3xl md:hidden cursor-pointer " onClick={() => setShowMenu(!showMenu)}> 
            &#9776;
@@ -31,15 +32,19 @@ export default function Navbar() {
      {/* <!--Mobil Menu--> */}
      {
       showMenu && <div id="mobile-menu" class="absolute top-0 bg-gradient-to-tr from-neutral-900 to-neutral-700 w-full 
-      text-2xl flex flex-col justify-content-center origin-top
-      animate-open-menu z-20">
-       <button type="button" class="text-3xl self-end px-6 font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200" onClick={() => setShowMenu(false)} > &times;
+      text-2xl flex flex-col origin-top animate-open-menu z-20">
+       <button type="button" class="text-3xl self-end px-6 font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200" 
+       onClick={() => setShowMenu(false)} > &times;
        </button>
-       <nav class="flex flex-col items-center py-8 space-y-5 " aria-label="mobile">
-        <a href="/" class=" text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">Home</a>
-        <a href="/about" class=" text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">About</a>
-        <a href="/albums" class=" text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">Albums</a>
-        <a href="/live" class=" text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">LiveStream</a>
+       <nav class="flex flex-col  py-8 space-y-5 " aria-label="mobile">
+        <a href="/" class=" text-center font-bold 
+        text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">Home</a>
+        <a href="/about" class=" text-center font-bold 
+        text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">About</a>
+        <a href="/albums" class=" text-center font-bold 
+        text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">Albums</a>
+        <a href="/live" class=" text-center font-bold 
+        text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">LiveStream</a>
        </nav>      
       </div>
      }

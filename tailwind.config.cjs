@@ -9,7 +9,7 @@ module.exports = {
       },
       backgroundImage:{
         'hero-pattern': "url('/img/space.jpg')",
-        'homepage': "url('/img/spacepic.jpg')",
+        'homepage': "url('/img/homepage.jpg')",
       },
       colors:{
         'backgroundcolor': 'gradient-to-r from-sky-500 to-indigo-500',
@@ -37,8 +37,10 @@ module.exports = {
       },
       animation: {
         'open-menu': 'open-menu 0.5s ease-in-out forwards',
-         wiggle: 'wiggle 1s ease-in-out infinite',
-         spinslow: 'spin 8s linear infinite',
+         wiggle: 'wiggle 10s ease-in-out infinite',
+         spinslow: 'spin 20s linear infinite',
+         spinslower: 'spin 200s linear infinite',
+         bounceslow: 'bounce 80s infinite'
       }
     },
   },

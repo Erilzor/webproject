@@ -20,7 +20,7 @@ export default function Footer(){
         <a href="/" class="text-transparent bg-clip-text bg-gradient-to-r hover:from-orange-600 hover:to-orange-300">Home</a>
         <a href="/about" class="text-transparent bg-clip-text bg-gradient-to-r hover:from-orange-600 hover:to-orange-300">About</a>
         <a href="/albums" class="text-transparent bg-clip-text bg-gradient-to-r hover:from-orange-600 hover:to-orange-300">Albums</a>
-        <a href="/spaceman" class="text-transparent bg-clip-text bg-gradient-to-r hover:from-orange-600 hover:to-orange-300">Spaceman</a>
+        <a href="/live" class="text-transparent bg-clip-text bg-gradient-to-r hover:from-orange-600 hover:to-orange-300">LiveStream</a>
       </div>
       <div class="flex flex-col space-y-3 font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200">
         <a href="#" class="text-transparent bg-clip-text bg-gradient-to-r hover:from-orange-600 hover:to-orange-300">Help</a>
