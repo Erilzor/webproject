@@ -2,14 +2,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import { useState, useEffect } from "react"
 import Modal from "../components/ProductModal"
-
 import * as datas from "../../public/app-data/library/picture-library.json"
-
-
-// import ProductCard from "../components/ProductCard"
-// // import * as images from "../../../app-data/library/picture-library.json" 
-// import AlbumHeaders from "../components/AlbumHeaders"
-
 
 export default function Album() {
 
@@ -31,7 +24,7 @@ export default function Album() {
     <Navbar />
 
     <section id="hero" class="bg-hero-pattern pt-20 pb-96 text-white">
-      {/* Headers with hover name effect */}
+      {/* Headers with hover effect */}
       <div class="flex flex-row flex-wrap space-x-6 justify-center">
         {
           data && data.length > 0 && data.map((item, index) => {
