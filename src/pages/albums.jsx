@@ -18,13 +18,11 @@ export default function Album() {
     setData(dd)
   }, [])
 
-
   return <main>
 
     <Navbar />
 
     <section id="hero" class="bg-hero-pattern pt-20 pb-96 text-white">
-      {/* Headers with hover effect */}
       <div class="flex flex-row flex-wrap space-x-6 justify-center">
         {
           data && data.length > 0 && data.map((item, index) => {
@@ -39,8 +37,6 @@ export default function Album() {
                   <img key={item.id} src={item.headerImage} className="h-52 w-52 rounded-full hover:opacity-75" />
                 </div>
               </div>
-
-
             </div>
           })
         }
@@ -48,10 +44,7 @@ export default function Album() {
 
       <Modal isVisible={shownModal} onClose={() => setShownModal(-1)} contentIndex={shownModal} />
 
-
     </section>
-
-   
 
     <Footer />
 

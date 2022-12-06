@@ -1,4 +1,3 @@
-
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 
@@ -6,7 +5,6 @@ export default function Test() {
   return <main>
 
     <Navbar />
-
 
     <section id="aboutsection" class="bg-hero-pattern py-10 text-white">
       <div className="flex flex-row justify-center ">
@@ -26,7 +24,6 @@ export default function Test() {
                  text-black text-xl mt-10 border-solid-white border-2 p-2 rounded-md" href="mailto:jennifer.bjorklund@edu.newton.se" class="button">Contact me</a>
         </div>
 
-
         <div className="flex flex-col justify-center items-center w-80 text-center ">
           <img src="/img/rnddude.png"/>
           <h2 className="text-3xl underline underline-offset-4 hover:opacity-90">John Doe</h2>
@@ -37,12 +34,8 @@ export default function Test() {
           <a className="bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300
                  text-black text-xl mt-10 border-solid-white border-2 p-2 rounded-md" href="mailto:john.doe@edu.newton.se" class="button">Contact me</a>
         </div>
-
       </div>
     </section>
-
-
-
 
     <Footer />
   </main>
