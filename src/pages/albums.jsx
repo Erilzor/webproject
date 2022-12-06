@@ -22,8 +22,8 @@ export default function Album() {
 
     <Navbar />
 
-    <section id="hero" class="bg-hero-pattern pt-20 pb-96 text-white">
-      <div class="flex flex-row flex-wrap space-x-6 justify-center">
+    <section id="hero" className="bg-hero-pattern pt-20 pb-96 text-white">
+      <div className="flex flex-row flex-wrap space-x-6 justify-center">
         {
           data && data.length > 0 && data.map((item, index) => {
 
