@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react"
 import * as datas from "../../public/app-data/library/picture-library.json"
 import SlideShow from "../components/SlideShow"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 export default function ProductModal({ isVisible, onClose, contentIndex }) {
     if (isVisible == -1) return null;
