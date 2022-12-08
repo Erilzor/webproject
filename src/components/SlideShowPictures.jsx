@@ -1,4 +1,5 @@
 import { useState } from "react"
+import {CiEdit} from 'react-icons/ci'
 
 export default function SlideShowPictures({ picture, picturepath, selectedTab }) {
 
@@ -8,8 +9,8 @@ export default function SlideShowPictures({ picture, picturepath, selectedTab })
 
     return <>    
             <div className="p-1 bg-gradient-to-tr from-stone-900 border-white border-2 border-dotted flex flex-col items-center  m-4  justify-center ">
-                <button onClick={() => setEditable(!isEditable)} className="border-solid border-2 rounded-md px-3 py-1 mr-2 text-black text-xl font-bold
-                 bg-gradient-to-r from-orange-200 to-orange-500 hover:from-orange-300 hover:to-orange-600">{isEditable ? "Save" : "Edit"}</button>
+                <button onClick={() => setEditable(!isEditable)} className="border-solid border-2 rounded-md px-3 py-1 my-2 mr-2 text-black text-xl font-bold
+                 bg-gradient-to-r from-orange-200 to-orange-500 hover:from-orange-300 hover:to-orange-600 flex flex-row">{isEditable ? "Save" : "Edit"}<CiEdit className="ml-1 my-1"/></button>
 
                 {!isEditable && <p className="py-4 font-bold text-2xl text-transparent bg-clip-text 
                  bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300 flex underline underline-offset-4"> {title} </p>}

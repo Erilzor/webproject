@@ -4,6 +4,8 @@ import SlideShowPictures from "./SlideShowPictures";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay } from 'swiper';
 import 'swiper/css';
+import { BsInfoCircle } from "react-icons/bs";
+import { BsArrowLeftCircle } from "react-icons/bs";
 
 export default function SlideShow({ isVisible, onClose, contentIndex, selectedPictureIds }) {
     if (isVisible == -1) return null;
@@ -33,9 +35,11 @@ export default function SlideShow({ isVisible, onClose, contentIndex, selectedPi
             place-self-end" onClick={() => onClose()}>X</button>
                 <div className="bg-hero-pattern border-white border-2 p-2 
             rounded">
-                    <div>
+                    <div className="flex flex-row justify-between">
                         <h1 className="font-bold text-5xl text-transparent bg-clip-text bg-gradient-to-r 
                         from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">{getData()[contentIndex].title}</h1>
+                        <button onClick={() => alert('Swipe to see more pictures')} className="border-solid border-2 rounded-full px-3 py-2 text-black text-xl font-bold
+                        bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300"> <BsInfoCircle /> </button>
                     </div>
                     <div class="flex flex-row justify-center space-x-6">
                         <button class="border-solid border-2 rounded-md px-4 py-2 text-black text-xl font-bold
@@ -43,30 +47,24 @@ export default function SlideShow({ isVisible, onClose, contentIndex, selectedPi
                         <button class="border-solid border-2 rounded-md px-4 py-2 text-black text-xl font-bold
                          bg-gradient-to-r from-orange-200 to-orange-500 hover:from-orange-300 hover:to-orange-600 text-left" onClick={() => setSelectedTab("lowRes")}>Low Resolution</button>
                     </div>
-
+                    <div class="flex flex-row ">
+                        <button class="border-solid border-2 rounded-md px-4 py-2 text-black text-xl font-bold
+                          bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300 text-left" onClick={() => onClose()}><BsArrowLeftCircle/></button>
+                    </div>
                     <Swiper
                         slidesPerView={1}
-                        // loop={true}
-                        autoplay={{
-                            delay: 5000
-                        }}
-                    >{ 
+                        loop={true}
+                    // autoplay={{
+                    //     delay: 5000
+                    // }}
+                    >{
                             (contentIndex >= 0) && (
-                                <div class="flex flex-row flex-wrap justify-center space-x-6 px-6 py-4">
-                                    <div className="flex flex-row text-white ">
-                                        {(getData()[contentIndex].pictures).filter(p => selectedPictureIds.includes(p.id)).map((picture) => {
-                                            return <SwiperSlide><SlideShowPictures picture={picture} picturepath={getData()[contentIndex].path} selectedTab={selectedTab} /></SwiperSlide>
-                                        })}
-                                    </div>
-                                </div>
+                                (getData()[contentIndex].pictures).filter(p => selectedPictureIds.includes(p.id)).map((picture) => {
+                                    return <SwiperSlide><SlideShowPictures picture={picture} picturepath={getData()[contentIndex].path} selectedTab={selectedTab} /></SwiperSlide>
+                                })
                             )
                         }
                     </Swiper>
-
-                    <div class="flex flex-row ">
-                        <button class="border-solid border-2 rounded-md px-4 py-2 text-black text-xl font-bold
-                          bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300 text-left" onClick={() => onClose()}>Close</button>
-                    </div>
                 </div>
             </div>
         </div>

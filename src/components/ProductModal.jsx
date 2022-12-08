@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import * as datas from "../../public/app-data/library/picture-library.json"
 import SlideShow from "../components/SlideShow"
+import { BsInfoCircle } from "react-icons/bs";
 
 export default function ProductModal({ isVisible, onClose, contentIndex }) {
     if (isVisible == -1) return null;
@@ -33,7 +34,13 @@ export default function ProductModal({ isVisible, onClose, contentIndex }) {
                     {
                         (contentIndex >= 0) && (
                             <div >
-                                <div className="py-10 flex flex-row justify-between ">
+                                <div className="flex flex-row justify-end">
+                                <button onClick={() => alert('Select pictures to view closer')} className="border-solid border-2 rounded-full p-2 text-black text-xl font-bold
+                                        bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300"> <BsInfoCircle/></button>
+                                </div>
+                                
+                                <div className="pb-10 pt-4 flex flex-row justify-between ">
+                                    
                                     <div>
                                         <h1 className="font-bold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">{getData()[contentIndex].title}</h1>
                                         <h1 className="text-xl text-white italic">{getData()[contentIndex].comment}</h1>
@@ -42,12 +49,12 @@ export default function ProductModal({ isVisible, onClose, contentIndex }) {
                                         <h1 className="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-orange-500 hover:from-orange-300 hover:to-orange-600">Amount of pictures: {getData()[contentIndex].pictures.length}</h1>
                                     </div>
                                 </div>
-                                <div class="flex flex-row ">
-                                    <button class="border-solid border-2 rounded-md px-4 py-2 text-black text-xl font-bold
+                                <div className="flex flex-row justify-between">
+                                    <button className="border-solid border-2 rounded-md px-4 py-2 text-black text-xl font-bold
                                     bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300 text-left" onClick={() =>
                                             setShownModal(contentIndex)}>View Pictures</button>
                                 </div>
-                                <div class="flex items-center space-x-6 px-6 py-4">
+                                <div className="flex items-center space-x-6 px-6 py-4">
                                     <div className="flex flex-row flex-wrap justify-center">
                                         {(getData()[contentIndex].pictures).map((picture) => {
                                             return <>
@@ -78,8 +85,8 @@ export default function ProductModal({ isVisible, onClose, contentIndex }) {
                             </div>
                         )
                     }
-                    <div class="flex flex-row ">
-                        <button class="border-solid border-2 rounded-md px-4 py-2 text-black text-xl font-bold
+                    <div className="flex flex-row ">
+                        <button className="border-solid border-2 rounded-md px-4 py-2 text-black text-xl font-bold
                      bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300 text-left" onClick={() => onClose()}>Close</button>
                     </div>
                 </div>

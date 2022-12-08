@@ -3,6 +3,7 @@ import Footer from "../components/Footer"
 import { useState, useEffect } from "react"
 import Modal from "../components/ProductModal"
 import * as datas from "../../public/app-data/library/picture-library.json"
+import { BsInfoCircle } from "react-icons/bs";
 
 export default function Album() {
 
@@ -22,7 +23,11 @@ export default function Album() {
 
     <Navbar />
 
-    <section id="hero" className="bg-hero-pattern pt-20 pb-96 text-white">
+    <section id="hero" className="bg-hero-pattern pt-10 pb-96 text-white">
+      <div  className="flex flex-row justify-end m-8">
+      <button onClick={() => alert('Click on an album to see the pictures in each album')} className="border-solid border-2 rounded-full px-2 py-2 text-black text-xl font-bold
+       bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300"> <BsInfoCircle/> </button>
+      </div> 
       <div className="flex flex-row flex-wrap space-x-6 justify-center">
         {
           data && data.length > 0 && data.map((item, index) => {
@@ -49,4 +54,7 @@ export default function Album() {
     <Footer />
 
   </main>
+}
+function alertAlbums() {
+  alert("Your file is being uploaded!")
 }

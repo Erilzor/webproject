@@ -11,7 +11,7 @@ const Home = () => {
 
       <Navbar />
 
-      <section id="hero" class=" pt-52 pb-96 bg-homepage bg-cover ">
+      <section id="hero" class=" pt-64 pb-96 bg-homepage bg-cover ">
     
  
 
