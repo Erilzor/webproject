@@ -10,13 +10,16 @@ export default function Test() {
     <Navbar />
 
     <section id="editsection" class="bg-hero-pattern pb-96">
-      <div className="flex flex-row justify-center p-10">
+      <div className="flex flex-row justify-center pt-32">
+      
         <img src="/img/earth.png" className="h-64 animate-spinslower h-40-sm" />
+        <img src="/img/satellite.png" className="h-20 rotate-90  pr-40" /> 
       </div>
-      <div className="flex flex-row justify-center">
-      <img src="/img/X.png" className="pl-96 animate-spinslow h-80" />
 
-      <img src="/img/satellite.png" className="h-64 animate-wiggle pr-40" /> 
+      <div className="flex flex-row justify-center">
+      <img src="/img/astronaut.png" className="pl-96 animate-spinslow h-80" />
+
+      
       </div>
      
     </section>
