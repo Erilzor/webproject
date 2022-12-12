@@ -50,11 +50,8 @@ export default function Album() {
       <Modal isVisible={shownModal} onClose={() => setShownModal(-1)} contentIndex={shownModal} />
 
     </section>
-
+    <section class="bg-hero-pattern py-40"></section>
     <Footer />
 
   </main>
-}
-function alertAlbums() {
-  alert("Your file is being uploaded!")
 }

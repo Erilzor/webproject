@@ -9,7 +9,7 @@ export default function Test() {
 
     <Navbar />
 
-    <section id="editsection" class="bg-hero-pattern pb-96">
+    <section class="bg-hero-pattern pb-96">
       <div className="flex flex-row justify-center pt-32">
       
         <img src="/img/earth.png" className="h-64 animate-spinslower h-40-sm" />
@@ -24,7 +24,7 @@ export default function Test() {
      
     </section>
 
-    <section id="edit" class="bg-hero-pattern py-20">
+    <section class="bg-hero-pattern py-20">
 
     </section>
 

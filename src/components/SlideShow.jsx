@@ -11,7 +11,7 @@ export default function SlideShow({ isVisible, onClose, contentIndex, selectedPi
     if (isVisible == -1) return null;
 
     const handleClose2 = (e) => {
-        if (e.target.id === 'slideShow') onClose();
+        if (e.target.id === 'none') onClose();
     }
 
     const [selectedTab, setSelectedTab] = useState("lowRes")
