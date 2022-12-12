@@ -53,7 +53,7 @@ export default function SlideShow({ isVisible, onClose, contentIndex, selectedPi
                     </div>
                     <Swiper
                         slidesPerView={1}
-                        loop={true}
+                        // loop={true}
                     // autoplay={{
                     //     delay: 5000
                     // }}

@@ -11,7 +11,7 @@ const Home = () => {
 
       <Navbar />
 
-      <section id="hero" class=" pt-96 pb-96 bg-homepage bg-cover ">
+      <section id="hero" class=" pt-96 h-[80rem] bg-homepage bg-cover ">
         <div className="flex flex-row justify-center">
           <div className="flex flex-col text-center">
             <h1 className="font-bold text-6xl text-transparent bg-clip-text bg-gradient-to-r 

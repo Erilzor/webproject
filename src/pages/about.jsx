@@ -30,7 +30,7 @@ export default function Test() {
           <img src="/img/rnddude.png"/>
           <h2 className="text-3xl underline underline-offset-4 hover:opacity-90">John Doe</h2>
           <p className="text-xl font-bold flex text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300"> ◌ Founder of Earth and expert on planet development ◌</p>
-          <p className="hover:opacity-90"> Enjoy finding new techniques to create even brighter stars. With a calm and peaceful apperance he often looks for new ways to discover planets yet unseen and create new ones.</p>
+          <p className="hover:opacity-90"> Enjoys finding new techniques to create even brighter stars. With a calm and peaceful apperance he often looks for new ways to discover planets yet unseen and create new ones.</p>
           <a className=" flex text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300"
             > <BsGithub className="text-orange-400 text-2xl mr-2"/>DoeMAN</a>
           <a className="bg-gradient-to-r from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300
