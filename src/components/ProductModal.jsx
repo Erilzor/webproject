@@ -28,9 +28,9 @@ export default function ProductModal({ isVisible, onClose, contentIndex }) {
 
             <div className="w-[80rem] flex flex-col">
                 <button className="text-white text-xl 
-            place-self-end" onClick={() => onClose()}>X</button>
+                place-self-end" onClick={() => onClose()}>X</button>
                 <div className="bg-hero-pattern border-white border-2 p-2 
-            rounded">
+                rounded">
                     {
                         (contentIndex >= 0) && (
                             <div >

@@ -30,11 +30,11 @@ export default function SlideShow({ isVisible, onClose, contentIndex, selectedPi
 
     return (
         <div id="slideShow" className=" fixed top-0 pt-14 flex justify-center w-full h-full bg-black backdrop-blur-sm bg-opacity-75 outline-none overflow-x-hidden overflow-y-auto z-10" onClick={handleClose2}>
-            <div className="w-[80rem] flex flex-col">
+            <div className="w-[70rem] flex flex-col">
                 <button className="text-white text-xl 
-            place-self-end" onClick={() => onClose()}>X</button>
+                place-self-end" onClick={() => onClose()}>X</button>
                 <div className="bg-hero-pattern border-white border-2 p-2 
-            rounded">
+                rounded">
                     <div className="flex flex-row justify-between">
                         <h1 className="font-bold text-5xl text-transparent bg-clip-text bg-gradient-to-r 
                         from-orange-500 to-orange-200 hover:from-orange-600 hover:to-orange-300">{getData()[contentIndex].title}</h1>
